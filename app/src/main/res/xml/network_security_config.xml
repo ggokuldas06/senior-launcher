@@ -4,7 +4,7 @@
     <!-- In production, use HTTPS and remove this config -->
     <domain-config cleartextTrafficPermitted="true">
         <!-- Relay server IPs -->
-        <domain includeSubdomains="true">172.20.10.2</domain>
+        <domain includeSubdomains="true">192.168.0.100</domain>
         <domain includeSubdomains="true">172.20.10.5</domain>
         <domain includeSubdomains="true">192.168.137.26</domain>
         <!-- Android emulator localhost -->
