@@ -1,0 +1,654 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.senioroslauncher"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Communication Permissions -->
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:6:5-69
+12-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:6:22-66
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:7:5-72
+13-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:7:22-69
+14    <uses-permission android:name="android.permission.SEND_SMS" />
+14-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:8:5-67
+14-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.READ_SMS" />
+15-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:9:5-67
+15-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:10:5-70
+16-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:10:22-67
+17    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+17-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:11:5-72
+17-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:11:22-69
+18
+19    <!-- Location Permissions -->
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:14:5-79
+20-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:14:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:15:5-81
+21-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:15:22-78
+22    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+22-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:16:5-85
+22-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:16:22-82
+23
+24    <!-- Hardware Permissions -->
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:19:5-65
+25-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:19:22-62
+26    <uses-permission android:name="android.permission.FLASHLIGHT" />
+26-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:20:5-69
+26-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:20:22-66
+27    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+27-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:21:5-71
+27-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:21:22-68
+28    <uses-permission android:name="android.permission.BODY_SENSORS" />
+28-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:22:5-71
+28-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:22:22-68
+29    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+29-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:23:5-85
+29-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:23:22-82
+30
+31    <!-- System Permissions -->
+32    <uses-permission android:name="android.permission.VIBRATE" />
+32-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:26:5-66
+32-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:26:22-63
+33    <uses-permission android:name="android.permission.WAKE_LOCK" />
+33-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:27:5-68
+33-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:27:22-65
+34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+34-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:28:5-81
+34-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:28:22-78
+35    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+35-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:29:5-30:53
+35-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:29:22-74
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+36-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:31:5-77
+36-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:31:22-74
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+37-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:32:5-84
+37-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:32:22-81
+38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+38-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:33:5-86
+38-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:33:22-83
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+39-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:34:5-87
+39-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:34:22-84
+40    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+40-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:35:5-77
+40-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:35:22-74
+41    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+41-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:36:5-81
+41-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:36:22-78
+42    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+42-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:37:5-78
+42-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:37:22-75
+43
+44    <!-- Bluetooth Permissions -->
+45    <uses-permission
+45-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:40:5-95
+46        android:name="android.permission.BLUETOOTH"
+46-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:40:22-65
+47        android:maxSdkVersion="30" />
+47-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:40:66-92
+48    <uses-permission
+48-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:41:5-101
+49        android:name="android.permission.BLUETOOTH_ADMIN"
+49-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:41:22-71
+50        android:maxSdkVersion="30" />
+50-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:41:72-98
+51    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+51-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:42:5-76
+51-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:42:22-73
+52    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+52-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:43:5-73
+52-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:43:22-70
+53
+54    <!-- Storage Permissions -->
+55    <uses-permission
+55-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:46:5-107
+56        android:name="android.permission.READ_EXTERNAL_STORAGE"
+56-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:46:22-77
+57        android:maxSdkVersion="32" />
+57-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:46:78-104
+58    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+58-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:47:5-76
+58-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:47:22-73
+59
+60    <!-- Alarm Permissions -->
+61    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+61-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:50:5-79
+61-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:50:22-76
+62    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+62-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:51:5-74
+62-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:51:22-71
+63
+64    <!-- Phone State -->
+65    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+65-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:54:5-75
+65-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:54:22-72
+66    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+66-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:55:5-77
+66-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:55:22-74
+67    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+67-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:56:5-80
+67-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:56:22-77
+68
+69    <!-- Internet for potential future features -->
+70    <uses-permission android:name="android.permission.INTERNET" />
+70-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:59:5-67
+70-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:59:22-64
+71    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+71-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:60:5-79
+71-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:60:22-76
+72    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+72-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:61:5-76
+72-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:61:22-73
+73    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+73-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:62:5-76
+73-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:62:22-73
+74
+75    <uses-feature
+75-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:64:5-85
+76        android:name="android.hardware.camera"
+76-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:64:19-57
+77        android:required="false" />
+77-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:64:58-82
+78    <uses-feature
+78-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:65:5-91
+79        android:name="android.hardware.camera.flash"
+79-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:65:19-63
+80        android:required="false" />
+80-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:65:64-88
+81    <uses-feature
+81-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:66:5-99
+82        android:name="android.hardware.sensor.accelerometer"
+82-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:66:19-71
+83        android:required="false" />
+83-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:66:72-96
+84    <uses-feature
+84-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:67:5-88
+85        android:name="android.hardware.telephony"
+85-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:67:19-60
+86        android:required="false" />
+86-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:67:61-85
+87    <uses-feature
+87-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:68:5-88
+88        android:name="android.hardware.bluetooth"
+88-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:68:19-60
+89        android:required="false" />
+89-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:68:61-85
+90
+91    <permission
+91-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+92        android:name="com.example.senioroslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+92-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+93        android:protectionLevel="signature" />
+93-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+94
+95    <uses-permission android:name="com.example.senioroslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+95-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+95-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+96
+97    <application
+97-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:70:5-275:19
+98        android:name="com.example.senioroslauncher.SeniorLauncherApp"
+98-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:71:9-42
+99        android:allowBackup="true"
+99-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:72:9-35
+100        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+100-->[androidx.core:core:1.17.0] /Users/anishvimal/.gradle/caches/8.13/transforms/b4b70b2eb09e61e815becd2abd573a4f/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+101        android:dataExtractionRules="@xml/data_extraction_rules"
+101-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:73:9-65
+102        android:debuggable="true"
+103        android:extractNativeLibs="false"
+104        android:fullBackupContent="@xml/backup_rules"
+104-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:74:9-54
+105        android:icon="@mipmap/ic_launcher"
+105-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:75:9-43
+106        android:label="@string/app_name"
+106-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:76:9-41
+107        android:networkSecurityConfig="@xml/network_security_config"
+107-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:77:9-69
+108        android:roundIcon="@mipmap/ic_launcher_round"
+108-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:78:9-54
+109        android:supportsRtl="true"
+109-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:79:9-35
+110        android:testOnly="true"
+111        android:theme="@style/Theme.Senioroslauncher" >
+111-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:80:9-54
+112
+113        <!-- Main Activity - Home Screen / Launcher -->
+114        <activity
+114-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:84:9-99:20
+115            android:name="com.example.senioroslauncher.MainActivity"
+115-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:85:13-41
+116            android:exported="true"
+116-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:86:13-36
+117            android:launchMode="singleTask"
+117-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:87:13-44
+118            android:screenOrientation="portrait"
+118-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:88:13-49
+119            android:theme="@style/Theme.Senioroslauncher" >
+119-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:89:13-58
+120            <intent-filter>
+120-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:90:13-93:29
+121                <action android:name="android.intent.action.MAIN" />
+121-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:91:17-69
+121-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:91:25-66
+122
+123                <category android:name="android.intent.category.LAUNCHER" />
+123-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:92:17-77
+123-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:92:27-74
+124            </intent-filter>
+125            <intent-filter>
+125-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:94:13-98:29
+126                <action android:name="android.intent.action.MAIN" />
+126-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:91:17-69
+126-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:91:25-66
+127
+128                <category android:name="android.intent.category.HOME" />
+128-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:96:17-73
+128-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:96:27-70
+129                <category android:name="android.intent.category.DEFAULT" />
+129-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:97:17-76
+129-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:97:27-73
+130            </intent-filter>
+131        </activity>
+132
+133        <!-- Emergency Activity -->
+134        <activity
+134-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:102:9-108:43
+135            android:name="com.example.senioroslauncher.ui.emergency.EmergencyActivity"
+135-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:103:13-59
+136            android:exported="false"
+136-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:104:13-37
+137            android:launchMode="singleTop"
+137-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:105:13-43
+138            android:screenOrientation="portrait"
+138-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:106:13-49
+139            android:showOnLockScreen="true"
+139-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:107:13-44
+140            android:turnScreenOn="true" />
+140-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:108:13-40
+141
+142        <!-- Medication Activity -->
+143        <activity
+143-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:111:9-114:52
+144            android:name="com.example.senioroslauncher.ui.medication.MedicationActivity"
+144-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:112:13-61
+145            android:exported="false"
+145-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:113:13-37
+146            android:screenOrientation="portrait" />
+146-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:114:13-49
+147
+148        <!-- Medication Reminder Activity (Full Screen Alarm) -->
+149        <activity
+149-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:117:9-123:43
+150            android:name="com.example.senioroslauncher.ui.medication.MedicationReminderActivity"
+150-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:118:13-69
+151            android:exported="false"
+151-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:119:13-37
+152            android:launchMode="singleTop"
+152-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:120:13-43
+153            android:screenOrientation="portrait"
+153-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:121:13-49
+154            android:showOnLockScreen="true"
+154-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:122:13-44
+155            android:turnScreenOn="true" />
+155-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:123:13-40
+156
+157        <!-- Health Activity -->
+158        <activity
+158-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:126:9-129:52
+159            android:name="com.example.senioroslauncher.ui.health.HealthActivity"
+159-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:127:13-53
+160            android:exported="false"
+160-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:128:13-37
+161            android:screenOrientation="portrait" />
+161-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:129:13-49
+162
+163        <!-- Medical Profile Activity -->
+164        <activity
+164-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:132:9-135:52
+165            android:name="com.example.senioroslauncher.ui.health.MedicalProfileActivity"
+165-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:133:13-61
+166            android:exported="false"
+166-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:134:13-37
+167            android:screenOrientation="portrait" />
+167-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:135:13-49
+168
+169        <!-- Health Check-In Activity -->
+170        <activity
+170-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:138:9-141:52
+171            android:name="com.example.senioroslauncher.ui.health.HealthCheckInActivity"
+171-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:139:13-60
+172            android:exported="false"
+172-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:140:13-37
+173            android:screenOrientation="portrait" />
+173-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:141:13-49
+174
+175        <!-- Contacts Activity -->
+176        <activity
+176-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:144:9-147:52
+177            android:name="com.example.senioroslauncher.ui.contacts.ContactsActivity"
+177-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:145:13-57
+178            android:exported="false"
+178-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:146:13-37
+179            android:screenOrientation="portrait" />
+179-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:147:13-49
+180
+181        <!-- Speed Dial Activity -->
+182        <activity
+182-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:150:9-153:52
+183            android:name="com.example.senioroslauncher.ui.contacts.SpeedDialActivity"
+183-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:151:13-58
+184            android:exported="false"
+184-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:152:13-37
+185            android:screenOrientation="portrait" />
+185-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:153:13-49
+186
+187        <!-- Messages Activity -->
+188        <activity
+188-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:156:9-159:52
+189            android:name="com.example.senioroslauncher.ui.messages.MessagesActivity"
+189-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:157:13-57
+190            android:exported="false"
+190-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:158:13-37
+191            android:screenOrientation="portrait" />
+191-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:159:13-49
+192
+193        <!-- Notes Activity -->
+194        <activity
+194-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:162:9-165:52
+195            android:name="com.example.senioroslauncher.ui.notes.NotesActivity"
+195-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:163:13-51
+196            android:exported="false"
+196-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:164:13-37
+197            android:screenOrientation="portrait" />
+197-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:165:13-49
+198
+199        <!-- Calendar Activity -->
+200        <activity
+200-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:168:9-171:52
+201            android:name="com.example.senioroslauncher.ui.calendar.CalendarActivity"
+201-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:169:13-57
+202            android:exported="false"
+202-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:170:13-37
+203            android:screenOrientation="portrait" />
+203-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:171:13-49
+204
+205        <!-- All Apps Activity -->
+206        <activity
+206-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:174:9-177:52
+207            android:name="com.example.senioroslauncher.ui.apps.AllAppsActivity"
+207-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:175:13-52
+208            android:exported="false"
+208-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:176:13-37
+209            android:screenOrientation="portrait" />
+209-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:177:13-49
+210
+211        <!-- Video Contacts Activity -->
+212        <activity
+212-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:180:9-183:52
+213            android:name="com.example.senioroslauncher.ui.video.VideoContactsActivity"
+213-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:181:13-59
+214            android:exported="false"
+214-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:182:13-37
+215            android:screenOrientation="portrait" />
+215-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:183:13-49
+216
+217        <!-- Ride Booking Activity -->
+218        <activity
+218-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:186:9-189:52
+219            android:name="com.example.senioroslauncher.ui.ride.RideBookingActivity"
+219-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:187:13-56
+220            android:exported="false"
+220-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:188:13-37
+221            android:screenOrientation="portrait" />
+221-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:189:13-49
+222
+223        <!-- Settings Activity -->
+224        <activity
+224-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:192:9-195:52
+225            android:name="com.example.senioroslauncher.ui.settings.SettingsActivity"
+225-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:193:13-57
+226            android:exported="false"
+226-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:194:13-37
+227            android:screenOrientation="portrait" />
+227-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:195:13-49
+228
+229        <!-- Help Activity -->
+230        <activity
+230-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:198:9-201:52
+231            android:name="com.example.senioroslauncher.ui.help.HelpActivity"
+231-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:199:13-49
+232            android:exported="false"
+232-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:200:13-37
+233            android:screenOrientation="portrait" />
+233-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:201:13-49
+234
+235        <!-- Guardian Pairing Activity -->
+236        <activity
+236-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:204:9-207:52
+237            android:name="com.example.senioroslauncher.ui.guardian.PairingActivity"
+237-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:205:13-56
+238            android:exported="false"
+238-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:206:13-37
+239            android:screenOrientation="portrait" />
+239-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:207:13-49
+240
+241        <!-- Services -->
+242        <service
+242-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:210:9-213:54
+243            android:name="com.example.senioroslauncher.services.FallDetectionService"
+243-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:211:13-58
+244            android:exported="false"
+244-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:212:13-37
+245            android:foregroundServiceType="health" />
+245-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:213:13-51
+246        <service
+246-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:215:9-217:40
+247            android:name="com.example.senioroslauncher.services.MedicationReminderService"
+247-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:216:13-63
+248            android:exported="false" />
+248-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:217:13-37
+249        <service
+249-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:219:9-222:56
+250            android:name="com.example.senioroslauncher.services.LocationSharingService"
+250-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:220:13-60
+251            android:exported="false"
+251-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:221:13-37
+252            android:foregroundServiceType="location" />
+252-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:222:13-53
+253        <service
+253-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:224:9-234:19
+254            android:name="com.example.senioroslauncher.services.CallAutoAnswerService"
+254-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:225:13-59
+255            android:exported="true"
+255-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:226:13-36
+256            android:permission="android.permission.BIND_INCALL_SERVICE" >
+256-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:227:13-72
+257            <meta-data
+257-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:228:13-230:41
+258                android:name="android.telecom.IN_CALL_SERVICE_UI"
+258-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:229:17-66
+259                android:value="false" />
+259-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:230:17-38
+260
+261            <intent-filter>
+261-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:231:13-233:29
+262                <action android:name="android.telecom.InCallService" />
+262-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:232:17-72
+262-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:232:25-69
+263            </intent-filter>
+264        </service>
+265
+266        <!-- Guardian Monitoring Service -->
+267        <service
+267-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:237:9-240:56
+268            android:name="com.example.senioroslauncher.services.GuardianMonitoringService"
+268-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:238:13-63
+269            android:exported="false"
+269-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:239:13-37
+270            android:foregroundServiceType="dataSync" />
+270-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:240:13-53
+271
+272        <!-- Broadcast Receivers -->
+273        <receiver
+273-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:243:9-250:20
+274            android:name="com.example.senioroslauncher.receivers.BootReceiver"
+274-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:244:13-51
+275            android:exported="true" >
+275-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:245:13-36
+276            <intent-filter>
+276-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:246:13-249:29
+277                <action android:name="android.intent.action.BOOT_COMPLETED" />
+277-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:247:17-79
+277-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:247:25-76
+278                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+278-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:248:17-82
+278-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:248:25-79
+279            </intent-filter>
+280        </receiver>
+281        <receiver
+281-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:252:9-261:20
+282            android:name="com.example.senioroslauncher.receivers.MedicationAlarmReceiver"
+282-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:253:13-62
+283            android:exported="false" >
+283-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:254:13-37
+284            <intent-filter>
+284-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:255:13-260:29
+285                <action android:name="com.example.senioroslauncher.MEDICATION_REMINDER" />
+285-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:256:17-91
+285-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:256:25-88
+286                <action android:name="com.example.senioroslauncher.MEDICATION_TAKEN" />
+286-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:257:17-88
+286-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:257:25-85
+287                <action android:name="com.example.senioroslauncher.MEDICATION_SKIPPED" />
+287-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:258:17-90
+287-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:258:25-87
+288                <action android:name="com.example.senioroslauncher.MEDICATION_SNOOZED" />
+288-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:259:17-90
+288-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:259:25-87
+289            </intent-filter>
+290        </receiver>
+291        <receiver
+291-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:263:9-265:40
+292            android:name="com.example.senioroslauncher.receivers.AlarmReceiver"
+292-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:264:13-52
+293            android:exported="false" />
+293-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:265:13-37
+294        <receiver
+294-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:267:9-273:20
+295            android:name="com.example.senioroslauncher.services.FallDetectionReceiver"
+295-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:268:13-59
+296            android:exported="false" >
+296-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:269:13-37
+297            <intent-filter>
+297-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:270:13-272:29
+298                <action android:name="com.example.senioroslauncher.IM_OK" />
+298-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:271:17-77
+298-->/Users/anishvimal/AndroidStudioProjects/senioroslauncher2/app/src/main/AndroidManifest.xml:271:25-74
+299            </intent-filter>
+300        </receiver>
+301
+302        <activity
+302-->[androidx.compose.ui:ui-tooling-android:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/79f18c83137b222d301bacb9c407299f/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+303            android:name="androidx.compose.ui.tooling.PreviewActivity"
+303-->[androidx.compose.ui:ui-tooling-android:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/79f18c83137b222d301bacb9c407299f/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+304            android:exported="true" />
+304-->[androidx.compose.ui:ui-tooling-android:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/79f18c83137b222d301bacb9c407299f/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+305        <activity
+305-->[androidx.compose.ui:ui-test-manifest:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/efefbef4438e482f84bd8976963198e3/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:23:9-26:79
+306            android:name="androidx.activity.ComponentActivity"
+306-->[androidx.compose.ui:ui-test-manifest:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/efefbef4438e482f84bd8976963198e3/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:24:13-63
+307            android:exported="true"
+307-->[androidx.compose.ui:ui-test-manifest:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/efefbef4438e482f84bd8976963198e3/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:25:13-36
+308            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+308-->[androidx.compose.ui:ui-test-manifest:1.9.2] /Users/anishvimal/.gradle/caches/8.13/transforms/efefbef4438e482f84bd8976963198e3/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:26:13-76
+309
+310        <provider
+310-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+311            android:name="androidx.startup.InitializationProvider"
+311-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+312            android:authorities="com.example.senioroslauncher.androidx-startup"
+312-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+313            android:exported="false" >
+313-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+314            <meta-data
+314-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+315                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+315-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+316                android:value="androidx.startup" />
+316-->[androidx.emoji2:emoji2:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/6920b7c54ba91bf5135d0bbc330478b0/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+317            <meta-data
+317-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/anishvimal/.gradle/caches/8.13/transforms/cf8c84945af86c1e76f30814847def84/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+318                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+318-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/anishvimal/.gradle/caches/8.13/transforms/cf8c84945af86c1e76f30814847def84/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+319                android:value="androidx.startup" />
+319-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/anishvimal/.gradle/caches/8.13/transforms/cf8c84945af86c1e76f30814847def84/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+320            <meta-data
+320-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+321                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+321-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+322                android:value="androidx.startup" />
+322-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+323        </provider>
+324
+325        <service
+325-->[androidx.room:room-runtime:2.6.1] /Users/anishvimal/.gradle/caches/8.13/transforms/3d8d059f84c287fb24166189d58e0382/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+326            android:name="androidx.room.MultiInstanceInvalidationService"
+326-->[androidx.room:room-runtime:2.6.1] /Users/anishvimal/.gradle/caches/8.13/transforms/3d8d059f84c287fb24166189d58e0382/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+327            android:directBootAware="true"
+327-->[androidx.room:room-runtime:2.6.1] /Users/anishvimal/.gradle/caches/8.13/transforms/3d8d059f84c287fb24166189d58e0382/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+328            android:exported="false" />
+328-->[androidx.room:room-runtime:2.6.1] /Users/anishvimal/.gradle/caches/8.13/transforms/3d8d059f84c287fb24166189d58e0382/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+329
+330        <receiver
+330-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+331            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+331-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+332            android:directBootAware="false"
+332-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+333            android:enabled="true"
+333-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+334            android:exported="true"
+334-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+335            android:permission="android.permission.DUMP" >
+335-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+336            <intent-filter>
+336-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+337                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+337-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+337-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+338            </intent-filter>
+339            <intent-filter>
+339-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+340                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+340-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+340-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+341            </intent-filter>
+342            <intent-filter>
+342-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+343                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+343-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+343-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+344            </intent-filter>
+345            <intent-filter>
+345-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+346                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+346-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+346-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/anishvimal/.gradle/caches/8.13/transforms/699fb4ce9c0a730f241caecbff8c2807/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+347            </intent-filter>
+348        </receiver>
+349    </application>
+350
+351</manifest>

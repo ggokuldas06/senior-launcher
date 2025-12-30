@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.senioroslauncher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="35" />
+
+    <!-- Communication Permissions -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <!-- Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!-- Hardware Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+
+    <!-- System Permissions -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Bluetooth Permissions -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <!-- Storage Permissions -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Alarm Permissions -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- Phone State -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- Internet for potential future features -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <permission
+        android:name="com.example.senioroslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.senioroslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.example.senioroslauncher.SeniorLauncherApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.Senioroslauncher" >
+
+        <!-- Main Activity - Home Screen / Launcher -->
+        <activity
+            android:name="com.example.senioroslauncher.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Senioroslauncher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Emergency Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.emergency.EmergencyActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true" />
+
+        <!-- Medication Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.medication.MedicationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Medication Reminder Activity (Full Screen Alarm) -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.medication.MedicationReminderActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true" />
+
+        <!-- Health Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.health.HealthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Medical Profile Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.health.MedicalProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Health Check-In Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.health.HealthCheckInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Contacts Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.contacts.ContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Speed Dial Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.contacts.SpeedDialActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Messages Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.messages.MessagesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Notes Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.notes.NotesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Calendar Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.calendar.CalendarActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- All Apps Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.apps.AllAppsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Video Contacts Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.video.VideoContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Ride Booking Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.ride.RideBookingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Help Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.help.HelpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Guardian Pairing Activity -->
+        <activity
+            android:name="com.example.senioroslauncher.ui.guardian.PairingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Services -->
+        <service
+            android:name="com.example.senioroslauncher.services.FallDetectionService"
+            android:exported="false"
+            android:foregroundServiceType="health" />
+        <service
+            android:name="com.example.senioroslauncher.services.MedicationReminderService"
+            android:exported="false" />
+        <service
+            android:name="com.example.senioroslauncher.services.LocationSharingService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name="com.example.senioroslauncher.services.CallAutoAnswerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_INCALL_SERVICE" >
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_UI"
+                android:value="false" />
+
+            <intent-filter>
+                <action android:name="android.telecom.InCallService" />
+            </intent-filter>
+        </service>
+
+        <!-- Guardian Monitoring Service -->
+        <service
+            android:name="com.example.senioroslauncher.services.GuardianMonitoringService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Broadcast Receivers -->
+        <receiver
+            android:name="com.example.senioroslauncher.receivers.BootReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.senioroslauncher.receivers.MedicationAlarmReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.senioroslauncher.MEDICATION_REMINDER" />
+                <action android:name="com.example.senioroslauncher.MEDICATION_TAKEN" />
+                <action android:name="com.example.senioroslauncher.MEDICATION_SKIPPED" />
+                <action android:name="com.example.senioroslauncher.MEDICATION_SNOOZED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.example.senioroslauncher.receivers.AlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.example.senioroslauncher.services.FallDetectionReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.senioroslauncher.IM_OK" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.senioroslauncher.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
