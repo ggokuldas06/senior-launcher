@@ -268,10 +268,4 @@ npx expo start
 - ✅ Real-time pairing and communication
 ---
 
-## License
-
-[Add your license information here]
-
----
-
 **Built with ❤️ for safer, independent senior living**
