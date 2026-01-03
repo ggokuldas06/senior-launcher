@@ -266,19 +266,6 @@ npx expo start
 - ✅ Medication reminders
 - ✅ Family-controlled medication scheduling
 - ✅ Real-time pairing and communication
-
-### Phase 2
-- ⏳ Fall detection
-- ⏳ Daily health check-ins
-- ⏳ Missed medication alerts
-- ⏳ Battery alerts
-- ⏳ Alert logs for family
-
-### Phase 3
-- ⏳ Pension reminder system
-- ⏳ Inactivity alerts
-- ⏳ Health tips and visit reminders
-
 ---
 
 ## License
